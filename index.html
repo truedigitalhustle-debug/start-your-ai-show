@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>START YOUR OWN AI SHOW — Free Seedance Prompt Pack | True Digital Hustle</title>
+<meta name="description" content="I built a two-episode AI horror series with no crew, no budget and no film school. Here is every prompt, every reference image, and every mistake — free. Then go build yours.">
+<meta property="og:title" content="START YOUR OWN AI SHOW — Free Prompt Pack">
+<meta property="og:description" content="Two episodes, four characters, zero budget. Every prompt is here. Free, no email.">
+<meta property="og:image" content="poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0a09;--card:#171412;--line:#2a2521;--ink:#f3ede4;--mute:#a79d90;--gold:#e0a84a;--gold2:#f2c775;--purple:#6c2bd9}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.65;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 50% -10%,rgba(224,168,74,.12),transparent 55%),repeating-linear-gradient(0deg,transparent 0 39px,rgba(255,255,255,.015) 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,rgba(255,255,255,.015) 39px 40px);pointer-events:none;z-index:0}
+main{position:relative;z-index:1}
+.mono{font-family:"JetBrains Mono",monospace;letter-spacing:.18em;text-transform:uppercase;font-size:.72rem}
+.wrap{max-width:920px;margin:0 auto;padding:0 22px}
+section{padding:92px 0;border-top:1px solid var(--line)}
+h1{font-family:"Playfair Display",serif;font-weight:900;font-size:clamp(2.4rem,7.5vw,4.6rem);line-height:1.03;margin:.25em 0;letter-spacing:-.01em}
+h2{font-family:"Playfair Display",serif;font-weight:700;font-size:clamp(1.7rem,4vw,2.5rem);margin:.15em 0 .5em;line-height:1.15}
+h3{font-family:"Playfair Display",serif;font-size:1.3rem;margin:.7em 0 .3em}
+p{color:var(--mute)}
+p.lead{font-size:1.08rem;color:var(--ink)}
+.eyebrow{color:var(--gold);margin-bottom:14px}
+.hero{min-height:88vh;display:flex;align-items:center;border-top:0;padding:70px 0}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#1a1206;font-family:"JetBrains Mono",monospace;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;padding:18px 34px;border-radius:999px;text-decoration:none;font-weight:600;box-shadow:0 10px 40px rgba(224,168,74,.22)}
+.btn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold);box-shadow:none}
+.video{max-width:380px;margin:34px auto 0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#000;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.video video{display:block;width:100%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:18px 0}
+.card .head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:10px}
+.tag{font-family:"JetBrains Mono",monospace;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);background:rgba(224,168,74,.1);border:1px solid rgba(224,168,74,.3);padding:5px 10px;border-radius:5px;white-space:nowrap}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}
+.meta span{font-family:"JetBrains Mono",monospace;font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);border:1px solid var(--line);padding:5px 10px;border-radius:5px}
+pre{background:#0d0c0b;border:1px solid var(--line);border-radius:10px;padding:18px;font-family:"JetBrains Mono",monospace;font-size:.78rem;line-height:1.6;color:#d9d1c5;white-space:pre-wrap;word-wrap:break-word;margin:0;max-height:340px;overflow:auto}
+pre.open{max-height:none}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+button{cursor:pointer;font-family:"JetBrains Mono",monospace;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;border-radius:8px;padding:12px 18px;border:1px solid var(--gold);background:transparent;color:var(--gold)}
+button.primary{background:var(--gold);color:#1a1206}
+button.copied{background:#1f7a3c;border-color:#1f7a3c;color:#fff}
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{display:grid;grid-template-columns:46px 1fr;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+.step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:"JetBrains Mono",monospace;color:var(--gold);font-size:1.1rem;padding-top:3px}
+.step b{display:block;color:var(--ink)}
+.step span{color:var(--mute);font-size:.94rem}
+.tip{border-left:3px solid var(--gold);padding:6px 0 6px 16px;margin:16px 0;color:var(--ink)}
+.tip span{color:var(--mute)}
+.big{background:linear-gradient(180deg,rgba(108,43,217,.2),rgba(108,43,217,.05));border:1px solid rgba(108,43,217,.5);border-radius:16px;padding:30px;margin:26px 0}
+.big h3{margin-top:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:9px 15px;font-size:.92rem}
+.center{text-align:center}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin:24px 0}
+.stat div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;text-align:center}
+.stat b{display:block;font-family:"Playfair Display",serif;font-size:2rem;color:var(--gold)}
+.stat span{font-family:"JetBrains Mono",monospace;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+footer{padding:60px 0 46px;text-align:center;border-top:1px solid var(--line)}
+footer .mono{color:var(--mute);letter-spacing:.12em}
+@media(max-width:700px){section{padding:62px 0}.video{max-width:100%}}
+</style>
+</head>
+<body>
+<main>
+
+<section class="hero">
+<div class="wrap center">
+<div class="mono eyebrow">True Digital Hustle</div>
+<h1>YOU CAN MAKE<br>YOUR OWN SHOW.</h1>
+<p class="lead" style="max-width:620px;margin:0 auto 10px">No crew. No camera. No film school. No budget.</p>
+<p style="max-width:620px;margin:0 auto 30px">I built a two-episode horror series with recurring characters, a continuous story and a payoff that pays off across both videos — using AI, on a laptop, around a 9 to 5. Everything I used is on this page. Free, no email.</p>
+<a class="btn" href="#proof">See it, then take it ↓</a>
+<div class="video"><video controls playsinline preload="metadata" poster="poster.jpg" src="origin.mp4"></video></div>
+<div class="mono" style="margin-top:14px;color:var(--mute)">The Whistler: Origin — Episode 2 · 1:42 · Seedance 2.5</div>
+</div>
+</section>
+
+<section id="proof">
+<div class="wrap">
+<div class="mono eyebrow">Start here</div>
+<h2>This isn't a one-off clip. It's a series.</h2>
+<p>That's the part most people miss. Anyone can generate a cool five-second shot. What almost nobody does is make the same character walk into a second video, wearing the same coat, carrying the same object, in the same world — so that the two videos make each other better.</p>
+<p>That's the whole game, and it's the reason this page exists. Once you can hold a character and a world across episodes, you don't have a video. You have a show.</p>
+<div class="stat">
+<div><b>2</b><span>Episodes</span></div>
+<div><b>7</b><span>Reference images</span></div>
+<div><b>6</b><span>AI clips total</span></div>
+<div><b>$0</b><span>Crew</span></div>
+</div>
+<div class="big">
+<h3>The thing I want you to actually take from this</h3>
+<p style="color:var(--ink)">You are one weekend away from having your own show. Not a channel that posts clips — a <em>show</em>, with characters people recognise and come back for.</p>
+<p>Pick a genre you'd actually watch. Horror, sci-fi, a western, a creature series, a detective thing, a kids' fantasy. Invent one character and one place. Make the first episode badly. Make the second one better. That's it — that's the entire barrier now, and it used to be a film crew and forty thousand dollars.</p>
+<p style="color:var(--ink)"><strong>The tools stopped being the hard part. The only thing left is deciding to start.</strong></p>
+</div>
+</div>
+</section>
+
+<section id="how">
+<div class="wrap">
+<div class="mono eyebrow">The method</div>
+<h2>How to build a series, not a clip</h2>
+<p>This is the framework behind both episodes. It is genre-agnostic — swap horror for anything you like and the structure holds.</p>
+<div class="steps">
+<div class="step"><div><b>Lock your cast as images first.</b><span>Before you generate a single second of video, make a reference sheet for every character, creature and location. That sheet is your identity lock. Text descriptions drift; pictures don't.</span></div></div>
+<div class="step"><div><b>Give your character three objects.</b><span>Mine has a coat, a chain and a bone whistle. Objects are how an audience recognises someone in a new shot, and they give you free story later when you show where each one came from.</span></div></div>
+<div class="step"><div><b>Write in 20 to 30 second clips, then stitch.</b><span>Every model has a clip ceiling. Plan your episode as four chunks with hard cuts between them, generate each one, join them in CapCut. Nobody watching can tell.</span></div></div>
+<div class="step"><div><b>Chain the clips with the last few seconds.</b><span>Trim the previous clip down to its final 2–3 seconds and feed that in as the continuity reference. Feed in the whole clip and the model will splice random earlier shots into your new one.</span></div></div>
+<div class="step"><div><b>Make episode two answer a question episode one asked.</b><span>My first video ended with a man whistling and something huge answering. Episode two is where that thing came from. That single link doubled the value of a video I'd already posted.</span></div></div>
+<div class="step"><div><b>Plant one detail only rewatchers will catch.</b><span>There's a broken oar tied to the giant's hip in both episodes. Nobody clocks it first time. The people who do go back and watch everything again, and then they tell other people.</span></div></div>
+<div class="step"><div><b>Post it before it's perfect.</b><span>My first episode has flaws I can list from memory. It outperformed everything else on the page. Finish beats flawless, every single time.</span></div></div>
+</div>
+</div>
+</section>
+
+<section id="ideas">
+<div class="wrap">
+<div class="mono eyebrow">If you're stuck on what to make</div>
+<h2>Pick one of these and start tonight</h2>
+<p>Each of these works with the exact same method. One character, one place, one question the first episode doesn't answer.</p>
+<div class="chips">
+<span>🛰️ A lone engineer on a dying space station</span>
+<span>🤠 A gunslinger who never draws first</span>
+<span>🧟 One family surviving an outbreak</span>
+<span>🐋 A deep-sea crew that found something</span>
+<span>🕵️ A detective in a city that resets nightly</span>
+<span>🏚️ A house that different families keep moving into</span>
+<span>🐉 A kid raising something they shouldn't</span>
+<span>⚔️ The last two soldiers of a war that ended</span>
+<span>🌾 A farmer whose crops keep coming back wrong</span>
+<span>🚂 A train that never stops and never arrives</span>
+</div>
+<div class="tip" style="margin-top:26px"><b>The rule that makes any of them work:</b> <span>end episode one on something unexplained. Not a cliffhanger where someone's in danger — a <em>question</em>. Who was that. Where did it come from. What's in the box. Then episode two is already written for you.</span></div>
+</div>
+</section>
+
+<section id="prompts">
+<div class="wrap">
+<div class="mono eyebrow">The proof — free, no email</div>
+<h2>Every prompt from Episode 2</h2>
+<p>This is the real thing, exactly as I ran it. Four video prompts and the reference-image prompts that feed them. Built for Seedance 2.5 on Higgsfield, but the structure carries to any model that takes reference images.</p>
+
+<div class="card">
+<div class="head"><h3>The reference images</h3><span class="tag">Generate these first</span></div>
+<p>Seven plates: the giant, the man, the dog, the village whole, the village destroyed, the forest at dusk, the forest at night. Generate each on its own, never as a collage.</p>
+<pre>THE MAN — character sheet
+Photoreal character reference sheet, two views side by side on a plain neutral grey studio background: full-body front view on the left, full-body profile view on the right. A man in his late 40s, lean and weathered, close-cropped hair flecked with grey, short grey beard, deep lines around the eyes, a pale scar cutting across the left eyebrow. Calm, unreadable expression. He wears a knee-length dark green waxed leather coat with the sleeves pushed up, a rough linen shirt beneath, a small carved bone whistle on a leather cord at his chest, heavy leather boots caked in dried mud, and a coiled heavy iron chain slung over his right shoulder. No weapons. Soft even studio lighting, cinematic dark-fantasy realism, pore-level skin detail, 8K. No caption text anywhere in the image.
+
+THE CREATURE — character sheet
+Photoreal creature reference sheet, two views side by side on a plain neutral grey studio background: full-body side view on the left, front view on the right, with a small black adult human silhouette between them for scale. A large mastiff-type hound: heavy broad skull, short blunt muzzle, loose jowls, small folded ears, wide-set glowing amber eyes, visible breath. Short dense charcoal-black coat broken by bare pink-grey scar patches across the ribs and shoulders. Long thick tail, oversized paws. A thick riveted iron and leather collar with three heavy broken chain links hanging from a ring at the front. Soft even studio lighting, cinematic dark-fantasy creature design, hyper-detailed fur, 8K. No caption text anywhere in the image.
+
+THE LOCATION — environment plate
+Photoreal cinematic environment still, vertical 9:16, no people and no animals. The edge of a tall pine forest at dusk, seen from ground level. Green ferns and a fallen mossy log in the near foreground. A strip of open grass along the forest edge. Tall pine trunks in deep shadow behind, pale fog around their bases at 40 percent density. Cold blue evening light from behind the camera. Camera height one meter. Desaturated blue-green palette, fine film grain, 8K.</pre>
+<div class="actions"><button class="primary" data-copy>Copy reference prompts</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3>Clip 1 — the morning it ended</h3><span class="tag">20s · 9:16</span></div>
+<div class="meta"><span>Refs: giant, man, village</span><span>Native audio on</span></div>
+<pre>SCENE CONTEXT
+An ordinary clear morning at a small thatched river village. Elias (@Image2) is alone at the river shallows below the village filling a water skin. A drowned giant (@Image1) rises out of the river behind him, walks past him, and destroys the village while he lies motionless in the shallow water and watches.
+
+ACTIVE REFERENCES
+@Image1: the drowned giant, massively heavy waterlogged body, pale green-grey skin mottled with dark bruise patches, kelp-black hair plastered down its back, milky white eyes, rotted fishing-net loincloth, and a broken wooden oar tied at its right hip. It stands as tall as seven adult humans stacked head to toe. 100% matches the reference.
+@Image2: Elias, late 40s, close-cropped grey-flecked hair, short grey beard, pale scar across the left eyebrow. He wears a short work jacket over a linen shirt and carries no coat, no chain and no whistle. 100% matches the reference face.
+@Image4: the village environment, intact thatched huts, dirt path, river gorge, clear morning. 100% matches the reference.
+
+FIRST FRAME / BLOCKING
+Elias (@Image2) crouched at frame-right in the shallows, in profile, pushing a water skin under the surface. Reeds fill the bottom-left quarter of frame, out of focus. Composition rule: the giant (@Image1) is always framed from below and never fully inside the frame, and a human-scale object sits in the foreground of every shot it appears in.
+
+FORMAT MODE
+Timed multishot. Cuts only at the specified points, the camera does not cut on its own.
+
+0.0s to 4.0s — CUT 1. 47° medium, camera static and low at water level. Elias (@Image2) fills the water skin and shakes water off his hands. Behind him the village is calm, smoke rising straight up. Ordinary and unhurried.
+4.0s HARD CUT
+4.0s to 9.0s — CUT 2. 84° low wide from water level, camera static, reeds occluding the bottom 20% of frame. The river surface swells and breaks as the giant (@Image1) stands up out of the water 30 meters behind Elias. Water sheets off its body. Only its legs, hips and lower torso are inside the frame; its head is above the top of frame. Elias (@Image2) turns his head and goes completely still. The giant walks past him toward the bank at 8 km/h without looking down; its nearest foot lands 6 meters from him and throws a wall of water over him.
+9.0s HARD CUT
+9.0s to 15.0s — CUT 3. 63° handheld at ground level on the village path, camera shaking. The giant's (@Image1) foot comes down through a thatched roof and the hut folds flat. Villagers run past the lens in both directions. The giant's hand comes down into frame, closes around a running adult man, and lifts him up out of the top of frame. A small carved wooden doll drops into the mud in the foreground. No children are visible in this shot.
+15.0s HARD CUT
+15.0s to 20.0s — CUT 4. 18° close-up, camera static and half-submerged at water level. Elias (@Image2) lies on his side in 20 cm of water, one hand gripping a stone, face half in the water, eyes open and fixed on the village. He does not move and does not blink. The giant's (@Image1) leg passes through the upper half of frame directly above him and the broken wooden oar tied at its hip swings through frame just over his head. His eyes track the oar as it passes. Hold on his face to the end.
+
+OPTICS
+CUT 1 47°, CUT 2 84°, CUT 3 63°, CUT 4 18°, no drift mid-segment. Rectilinear, natural motion blur.
+
+CAMERA
+Operator is down in the water and the mud with the villagers: low, unsteady, reactive, never above head height. In CUT 4 the camera is completely still.
+
+PERFORMANCE
+Elias: ordinary and relaxed in CUT 1; in CUT 2 his whole body locks and his breathing stops; in CUT 4 his jaw is clenched, one tear track cutting through the river water on his face, chest barely moving. Pore-level skin detail, wet hair plastered to his forehead.
+
+PHYSICS
+The giant carries enormous mass: the river displaces in a surge as it stands, water sheets off its body for several seconds, each footfall sinks 40 cm and throws mud and water 10 meters, the ground visibly shakes. Thatch and timber collapse under weight before any dust appears.
+
+LIGHTING
+White balance 5600K. Hard low morning sun from camera-left, warm, skimming across the water. Soft blue sky bounce in the shadows. Every face readable and exposure even across both sides of frame in every cut.
+
+AUDIO
+All spoken sounds and background voices are in English. CUT 1: birds, water, one dog barking. CUT 2: a deep surge of displaced water, then a long low wet breath from above frame, then a sub-bass thud on each footstep. CUT 3: timber cracking, thatch tearing, villagers screaming in English. CUT 4: everything muffled and underwater, only Elias's own shallow breathing close and clear. No other language present.
+
+STYLE
+Photoreal dark-horror creature feature, vertical 9:16, 8K detail, fine film grain, natural handheld energy, no on-screen text.
+
+OUTPUT SETTINGS
+9:16 vertical, real-time throughout, 20 seconds.
+
+POSITIVE LOCKS
+Exactly one giant (@Image1) exists and it is framed from below in every shot with a human-scale object in the foreground and its head above the top of frame. Its identity, heavy bloated build, wet skin, net loincloth and the broken oar at its right hip stay identical in every cut. Elias (@Image2) keeps the same face in every cut and has no coat, no chain and no whistle anywhere in this clip. Elias stays in the water from CUT 2 to the end. All children stay out of frame during the destruction. Cuts only at the stated timecodes. All spoken dialogue and background voices are in English. Even exposure and sharpness on both sides of frame in every cut.</pre>
+<div class="actions"><button data-expand>Expand</button><button class="primary" data-copy>Copy Clip 1</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3>Clip 2 — nothing left</h3><span class="tag">30s · 9:16</span></div>
+<div class="meta"><span>Extend from Clip 1's last 2–3s</span><span>Refs: man, ruined village</span></div>
+<pre>SCENE CONTEXT
+Hours later, the same day. Elias (@Image2) walks back up into the destroyed village alone. He searches the wreckage, covers what he finds, pulls a dark green waxed leather coat out of the ruins and puts it on, then sits down in the mud and stops moving.
+
+ACTIVE REFERENCES
+@Image2: Elias, late 40s, close-cropped grey-flecked hair, short grey beard, pale scar across the left eyebrow, mud to the knees, damp. Use the reference for his FACE ONLY. In this scene he wears a short dark-olive work jacket over a plain linen shirt, open at the collar, and his chest and the front of his shirt are completely empty — bare skin and cloth, nothing hanging at his neck, no cord, no pendant, no whistle. His shoulders and back are empty too — no chain, no rope, no strap. 100% matches the reference face, and only the face.
+@Image5: the destroyed village environment, flattened thatched huts, churned mud, low smoke, water-filled craters. 100% matches the reference.
+
+FIRST FRAME / BLOCKING
+Elias (@Image2) entering frame from the bottom-left, seen from behind with the camera about one meter above the ground, walking slowly up the muddy path into the ruins. Composition rule: he is small in the frame in the wide shots and the ruins always surround him; bodies are never directly shown, only covered shapes, a hand, a shoe.
+
+FORMAT MODE
+Timed multishot. Cuts only at the specified points, the camera does not cut on its own.
+
+0.0s to 7.0s — CUT 1. 63° wide from behind and below, camera tracking with Elias (@Image2) at 3 km/h as he walks into the ruins. He stops. He turns his head slowly left, then right, then left again. Nobody else is moving anywhere in the shot. Hold on his back for two full seconds after he stops.
+7.0s HARD CUT
+7.0s to 14.0s — CUT 2. 47° medium, camera static and low. Elias (@Image2) drags a heavy roof beam aside with both hands, and it takes three separate efforts before it shifts. Underneath, a pale hand and a length of cloth. He stops completely. He pulls the cloth up over the hand, carefully, and rests his palm flat on it. Hold there for three seconds without him moving.
+14.0s HARD CUT
+14.0s to 21.0s — CUT 3. 47° medium, camera static. Elias (@Image2) pulls a heavy knee-length dark green waxed leather coat out from under a collapsed wall, dragging it free with both hands because it is waterlogged. He stands and shakes the ash out of it twice, the full length of it swinging. He puts it on over the short work jacket he is already wearing. It hangs below his knees and changes his whole silhouette.
+21.0s HARD CUT
+21.0s to 30.0s — CUT 4. 29° medium-close, camera static, slowly settling. Elias (@Image2) sits straight down in the mud in the middle of the ruins, forearms on his knees, and stops. He does not cry out. His jaw works once. His eyes stay open and fixed on nothing. Ash settles on his shoulders. Nothing else happens for the remaining seven seconds. One slow blink near the end.
+
+OPTICS
+CUT 1 63°, CUT 2 47°, CUT 3 47°, CUT 4 29°, no drift mid-segment. Every shot is a long hold — the length comes from stillness, not extra action.
+
+CAMERA
+Operator keeps a respectful distance and stays low, moving only in CUT 1 and locked off after that. The stillness of the camera carries the scene.
+
+PERFORMANCE
+Restraint throughout. Grief shows in the body, not the face: hands that shake slightly when they lift the beam, a long pause before he touches the cloth, shoulders dropping when the coat goes on, complete stillness at the end.
+
+LIGHTING
+White balance 6500K. Flat grey overcast from directly above, no hard shadows, one small warm glow from a low burning hut at frame right. Exposure even across the whole frame in every cut.
+
+AUDIO
+All spoken sounds and background voices are in English. No music. Wind across open ground, timber settling, a low fire, his boots pulling out of mud, his breathing. Total absence of voices, birds and animals — the silence should be conspicuous. No other language present.
+
+STYLE
+Photoreal dark-horror drama, vertical 9:16, 8K detail, fine film grain, restrained handheld energy, no on-screen text.
+
+OUTPUT SETTINGS
+9:16 vertical, real-time throughout, 30 seconds.
+
+POSITIVE LOCKS
+Elias (@Image2) is the only living person in this clip and keeps the same face in every cut. His neck and chest stay completely bare of any cord, pendant or whistle in every single cut, and his right shoulder stays bare of any chain or strap. He wears only the short work jacket in CUTs 1 and 2 and the heavy knee-length coat over it from CUT 3 to the end. No bodies are directly shown — only covered shapes, one hand and cloth. No giant appears and no scene from the source video repeats. Cuts only at the stated timecodes. All spoken dialogue and background voices are in English. Even exposure and sharpness on both sides of frame in every cut.</pre>
+<div class="actions"><button data-expand>Expand</button><button class="primary" data-copy>Copy Clip 2</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3>Clip 3 — something in the trees</h3><span class="tag">20s · 9:16</span></div>
+<div class="meta"><span>Extend from Clip 2's last 2–3s</span><span>Refs: man, dog, forest dusk</span></div>
+<pre>SCENE CONTEXT
+Dusk at the edge of a pine forest on a hillside. Elias (@Image2) is walking along the treeline carrying a canvas sack. He stops when he hears something move. A large young dog (@Image3) steps partway into the open and the two of them look at each other. He backs away slowly. The mood is calm, cautious and quiet.
+
+ACTIVE REFERENCES
+@Image2: Elias, late 40s, grey-flecked hair, short grey beard, pale scar across the left eyebrow. Use the reference for his FACE ONLY. He wears a heavy knee-length dark green waxed coat over a linen shirt, open at the collar, and his neck and chest are empty — plain skin and cloth, nothing hanging there. His right shoulder is bare. 100% matches the reference face, and only the face.
+@Image3: the young dog. Its shoulder stands level with Elias's shoulder. 100% matches the reference image in every single detail, exactly as shown.
+@Image6: the location — the edge of a tall pine forest at dusk, ferns and a fallen mossy log in the near foreground, a strip of open grass along the forest edge, pine trunks in deep shadow behind with fog at their bases. The whole clip takes place here. 100% matches the reference.
+
+FIRST FRAME / BLOCKING
+Elias (@Image2) walking left to right across the middle of frame in the dark green coat, a canvas sack over one shoulder, the treeline filling the right two-thirds of frame. Ferns occlude the bottom-left quarter, out of focus. Composition rule: the dog (@Image3) is revealed gradually — sound, then eyes, then part of its body — and is only fully visible in the final cut.
+
+FORMAT MODE
+Timed multishot. Cuts only at the specified points, the camera does not cut on its own.
+
+0.0s to 5.0s — CUT 1. 63° medium wide, camera static and low behind ferns. Elias (@Image2) walks across frame and stops mid-stride. He turns his head toward the treeline. Something heavy shifts across stone in the dark. He lowers the sack quietly to the ground and stands still.
+5.0s HARD CUT
+5.0s to 10.0s — CUT 2. 84° low angle from ground level, camera static, a mossy log occluding the bottom 25% of frame. Deep in the dark between the trunks, two amber points of light open at roughly knee height and hold steady. Fog density 50%.
+10.0s HARD CUT
+10.0s to 15.0s — CUT 3. 47° medium, camera static. The dog (@Image3) steps partway out of the treeline into the last light — head, shoulders and one foreleg visible, the rest still in shadow. It lowers its head and watches him, weight shifting back, then settles and stays where it is. Its breath fogs in the cold air.
+15.0s HARD CUT
+15.0s to 20.0s — CUT 4. 29° two-shot from the side at eye height, camera static, both of them in frame together with the dog's shoulder level with Elias's shoulder. Elias (@Image2) keeps his hands open and low. He says one quiet word to the animal, almost under his breath: "Easy." He takes two slow steps backward, leaving the sack on the ground. The dog (@Image3) stays where it is and watches him go. Hold on the dog's face, amber eyes catching the last light, to the end.
+
+OPTICS
+CUT 1 63°, CUT 2 84°, CUT 3 47°, CUT 4 29°, no drift mid-segment. Soft bloom on the amber eyes.
+
+CAMERA
+Camera is mounted low among the ferns and stays completely static in every cut. The stillness of the camera is what holds the moment.
+
+PERFORMANCE
+Elias: calm and unhurried, hands open and visible at his sides, one slow blink, he never raises his voice or his arms. The dog: watchful and uncertain, head low, ears back, weight shifting, staying put rather than coming closer. Visible breath from both in the cold, catch-lights in all four eyes.
+
+LIGHTING
+White balance 8500K. Low cold blue dusk light from behind the camera falling on Elias and on the front edge of the dog. The forest behind is near-black. The dog's amber eyes are the brightest point in frame in CUTs 2, 3 and 4. Exposure even across both sides of frame and the man and the animal are equally readable.
+
+AUDIO
+All spoken dialogue and background sounds are in English. Wind in pine needles, boots in wet grass, then silence. Something heavy shifting over stone and root. Both of them breathing. In CUT 4 Elias speaks one quiet word in English: "Easy." No other dialogue and no music.
+
+VOICE
+Elias speaks with one consistent naturally deep adult male voice, quiet and low, the way a person speaks to a frightened animal. Accurate natural lip synchronisation. Only one line in this clip: "Easy."
+
+STYLE
+Photoreal cinematic drama, vertical 9:16, 8K detail, fine film grain, static observational camera, no on-screen text.
+
+OUTPUT SETTINGS
+9:16 vertical, real-time throughout, 20 seconds.
+
+POSITIVE LOCKS
+The dog (@Image3) matches its reference image exactly and its shoulder is level with Elias's shoulder in every shot where both appear. Exactly one dog exists and no other animal appears. Elias (@Image2) keeps the same face and the knee-length coat in every cut, his neck and chest stay bare of any cord or pendant, and his right shoulder stays bare of any chain or strap. Elias keeps his hands open and low throughout. Both of them stay calm and still. Elias speaks exactly one word in the whole clip, "Easy", in CUT 4 and nowhere else. Cuts only at the stated timecodes. All spoken dialogue and background voices are in English. Even exposure and sharpness on both sides of frame in every cut.</pre>
+<div class="actions"><button data-expand>Expand</button><button class="primary" data-copy>Copy Clip 3</button></div>
+</div>
+
+<div class="card">
+<div class="head"><h3>Clip 4 — the offering</h3><span class="tag">30s · 9:16</span></div>
+<div class="meta"><span>Extend from Clip 3's last 2–3s</span><span>Refs: man, dog, forest night</span></div>
+<pre>SCENE CONTEXT
+Night at the same forest edge, later the same evening. The two of them already met once at dusk and the animal let him come close. Elias (@Image2) has built a small fire. He sets a wrapped bundle of meat on the ground ten paces away and sits back down to wait. The hound (@Image3) comes out of the dark and takes it. He works the worn collar off its neck, keeps the broken chain, and carves a whistle from bone. The clip ends on the first note he ever blows.
+
+ACTIVE REFERENCES
+@Image2: Elias, late 40s, grey-flecked hair, short grey beard, scar across the left eyebrow. Use the reference for his FACE ONLY. He wears the heavy knee-length dark green waxed coat over a linen shirt, and his neck and chest are empty — nothing hanging there, no cord, no whistle. His right shoulder is bare. 100% matches the reference face, and only the face.
+@Image3: the young hound — a very large dark short-coated dog with a broad heavy head, folded ears and bright amber eyes, with pale markings across its ribs, wearing a worn iron and leather collar with a short length of broken chain. It is the size of a big mastiff: when Elias stands, its head comes to his hip, and when he kneels they are face to face. 100% matches the reference in every detail.
+@Image7: the location — the same forest edge at night, a small fire burning low on bare packed earth at frame-left with a fallen log beside it, bare ground to the right where the firelight falls off, pine trunks in shadow behind. 100% matches the reference.
+
+FIRST FRAME / BLOCKING
+Elias (@Image2) seated against the log at frame-left, lit warm on one side by the fire, looking out at the dark. The wrapped bundle sits alone on the bare earth at frame-right. Composition rule: the hound (@Image3) enters from the dark background into the firelight; Elias stays seated and low through the whole clip.
+
+FORMAT MODE
+Timed multishot. Cuts only at the specified points, the camera does not cut on its own.
+
+0.0s to 7.0s — CUT 1. 47° wide from the side, camera static. Elias (@Image2) walks into frame, sets a cloth-wrapped bundle of meat down on the bare earth at frame-right, unwraps it open, walks back to the log and sits down with his hands visible on his knees. Without looking up at the dark he says quietly: "Go on. It's yours." Then he looks at the fire and nothing happens for three full seconds — he simply waits, and the only movement in frame is the fire.
+7.0s HARD CUT
+7.0s to 16.0s — CUT 2. 47° wide from the same side, camera static, matching the previous framing exactly. The fire has burned lower. For the first two seconds the frame is empty except Elias and the bundle. Then the hound (@Image3) comes out of the black treeline slowly, one careful step at a time, head low, chain links dragging and clinking, stopping twice on the way. It reaches the bundle and eats, fast and wet, and it never takes its amber eyes off Elias while it does. Elias does not move and does not look directly at it.
+16.0s HARD CUT
+16.0s to 23.0s — CUT 3. 29° medium-close, camera static, both of them low in frame. Elias (@Image2) is now kneeling beside the hound (@Image3), close enough to touch. He raises both hands slowly where the animal can see them, waits, and says quietly: "Hold still." Then he reaches to the worn collar and works the fastening open. It takes him several seconds and the old metal grinds. The collar opens and falls to the earth with the three broken chain links attached, and he says one more quiet word: "There." The hound stands completely still and lets him.
+23.0s HARD CUT
+23.0s to 30.0s — CUT 4. 18° close-up, camera static, warm firelight from frame-left. The three broken iron chain links are looped over Elias's right shoulder. He lifts a small freshly carved bone whistle and holds it just below his lips, his eyes on the dark, and says quietly: "Come find me." Then he puts the whistle to his lips and blows a single clean note. He lowers it slowly. In the darkness behind him, out of focus, two amber points of light lift and hold steady on him. Hold on his face, completely still, for three seconds after the note stops, and end.
+
+OPTICS
+CUT 1 47°, CUT 2 47°, CUT 3 29°, CUT 4 18°, no drift mid-segment. Soft warm bloom around the fire.
+
+CAMERA
+Operator sits low and still at the edge of the firelight and never moves in any cut. Everything is held.
+
+PERFORMANCE
+Elias: completely calm and deliberate, every movement slow and telegraphed, hands always visible and open, never looking directly at the animal until CUT 3. When the collar comes off, a single long breath out through the nose and nothing else. The hound: wary and very hungry — eating fast while watching him, flinching once when he first reaches toward the collar and then holding still.
+
+PHYSICS
+The chain links have real iron weight and clink against the hound's chest when it moves. The collar falls to the earth with a solid thud. The fire flickers and throws moving shadows across both of them.
+
+LIGHTING
+White balance 2200K on the fire side, 9000K moonlight fill from above. The fire is the key light from frame-left and models both faces; the moonlight keeps the shadow side readable rather than black. Exposure even across both sides of frame and the man and the animal equally lit.
+
+AUDIO
+All spoken dialogue and background sounds are in English. No music at any point. CUT 1: fire crackling, cloth unwrapping, his line "Go on. It's yours." spoken quietly, then a long stretch of silence with only wind and fire. CUT 2: two seconds of silence, then heavy links dragging over earth and careful footfalls stopping and starting, then fast eating and low breathing. CUT 3: his line "Hold still.", old metal grinding and giving way, the collar dropping with a solid thud, then "There." and one long breath out. CUT 4: silence, his line "Come find me.", then one high clean bone-whistle note held for two seconds, then complete silence except the fire for the last three seconds.
+
+VOICE
+Elias speaks with one consistent naturally deep adult male voice, quiet and low throughout, the way a person speaks to a frightened animal. Never raised, never theatrical. Accurate natural lip synchronisation. The only lines in this clip are: "Go on. It's yours." / "Hold still." / "There." / "Come find me."
+
+STYLE
+Photoreal dark-horror drama, vertical 9:16, 8K detail, fine film grain, completely static camera, no on-screen text.
+
+OUTPUT SETTINGS
+9:16 vertical, real-time throughout, 30 seconds.
+
+POSITIVE LOCKS
+The hound (@Image3) matches its reference sheet exactly and stays the size of a big mastiff in every shot — its head at Elias's hip when he stands, face to face with him when he kneels. It wears the worn collar in CUTs 2 and 3 and has no collar after the collar falls in CUT 3. Exactly one hound exists and no other animal appears. Elias (@Image2) keeps the same face and the knee-length coat in every cut, wears no chain until CUT 4, and the chain is over his right shoulder from CUT 4 onward. Elias stays seated or kneeling and low in every cut. Elias speaks only the four short lines given above and nothing else. Cuts only at the stated timecodes. All spoken dialogue and background voices are in English. Even exposure and sharpness on both sides of frame in every cut.</pre>
+<div class="actions"><button data-expand>Expand</button><button class="primary" data-copy>Copy Clip 4</button></div>
+</div>
+</div>
+</section>
+
+<section id="lessons">
+<div class="wrap">
+<div class="mono eyebrow">What it cost me to learn</div>
+<h2>Nine things that will save you hours</h2>
+<p>These are all mistakes I actually made on these two episodes. Every one of them cost me generations.</p>
+<div class="tip"><b>Set your aspect ratio before every single generation.</b> <span>It reverts to 16:9 each time. Three of my clips came out landscape because I set it once at the start of a session and assumed it stuck.</span></div>
+<div class="tip"><b>Vertical isn't just a format, it's a creative upgrade.</b> <span>My giant was impressive in 16:9 and oppressive in 9:16. Tall subject, tall frame. Regenerate rather than crop.</span></div>
+<div class="tip"><b>Never describe a huge creature with abstract sizes.</b> <span>"As tall as a two-story house" gets ignored. Compare it to objects in the shot — paw wider than that door, shoulder above that roof — and repeat the comparison every time you mention it.</span></div>
+<div class="tip"><b>Don't put a giant creature in an eye-level frame with a whole human.</b> <span>The model will shrink the creature to make both fit. Reveal it in pieces, and keep a human-scale object at the bottom of frame instead.</span></div>
+<div class="tip"><b>If a character has to earn an object, remove it from the reference image.</b> <span>My character wears a whistle in his sheet. In the prequel he hadn't made it yet, and no amount of "he carries no whistle" worked — the model kept restoring what it could see. I generated a second "before" sheet with it removed and the problem vanished instantly.</span></div>
+<div class="tip"><b>Re-tag every character on every mention.</b> <span>Write "the hunter (@Image2)" every time, not just the first. Otherwise the model swaps in whoever last filled a similar role.</span></div>
+<div class="tip"><b>Trim your continuity clip to its last 2–3 seconds.</b> <span>Feed in the whole previous clip and the model will splice a random earlier shot into the middle of your new one. I have watched it happen.</span></div>
+<div class="tip"><b>Use a reference image for locations, not a paragraph.</b> <span>It locks the setting far harder than prose, and it sidesteps the content filter entirely — which matters, because a written location description is what got one of my clips refused three times.</span></div>
+<div class="tip"><b>When a prompt gets refused, don't rewrite it on a hunch.</b> <span>Submit one block at a time until you find the one that fails. I burned three attempts guessing and found it in one pass by testing. Bonus: adding a reassuring line like "nobody is harmed here" makes it worse, because the filter reads the words, not the logic.</span></div>
+</div>
+</section>
+
+<section id="start" class="center">
+<div class="wrap">
+<div class="mono eyebrow">Last thing</div>
+<h2>Nobody is coming to give you permission.</h2>
+<p style="max-width:600px;margin:0 auto 14px">I have a 9 to 5. I made this at night. The first episode has mistakes in it that I can still point to, and it's the best-performing thing I've ever posted.</p>
+<p style="max-width:600px;margin:0 auto 32px">You have the same tools I have. Pick your genre, name one character, and make something bad this week. Episode two is where it gets good.</p>
+<a class="btn" href="https://www.instagram.com/truedigitalhustle" target="_blank" rel="noopener">Follow @truedigitalhustle ↗</a>
+<p style="margin-top:26px;font-size:.92rem">Making one? Tag me. I want to see it.</p>
+</div>
+</section>
+
+</main>
+<footer>
+<div class="wrap">
+<div class="mono">Built by True Digital Hustle — AI prompts. Cinematic workflows. No boring content.</div>
+<div class="mono" style="margin-top:8px">© 2026 True Digital Hustle</div>
+</div>
+</footer>
+<script>
+document.querySelectorAll('[data-copy]').forEach(b=>{b.addEventListener('click',async()=>{const pre=b.closest('.card').querySelector('pre');try{await navigator.clipboard.writeText(pre.innerText)}catch(e){const r=document.createRange();r.selectNodeContents(pre);const s=getSelection();s.removeAllRanges();s.addRange(r);document.execCommand('copy');s.removeAllRanges()}const t=b.textContent;b.textContent='Copied ✓';b.classList.add('copied');setTimeout(()=>{b.textContent=t;b.classList.remove('copied')},1800)})});
+document.querySelectorAll('[data-expand]').forEach(b=>{b.addEventListener('click',()=>{const pre=b.closest('.card').querySelector('pre');pre.classList.toggle('open');b.textContent=pre.classList.contains('open')?'Collapse':'Expand'})});
+</script>
+</body>
+</html>
